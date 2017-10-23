@@ -17,13 +17,13 @@ build:
 requirements:
   build:
     - python
-    - numpy x.x
+    - numpy
     - setuptools
     - cython
 
   run:
     - python
-    - numpy x.x
+    - numpy
     - astropy >=1.0
     - scipy
 
