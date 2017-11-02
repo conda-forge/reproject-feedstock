@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: reproject
@@ -7,7 +7,7 @@ package:
 source:
   fn: reproject-{{version}}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: 075e174f9cbe8e853f1be4dbbb93d585
+  md5: ab5aefcff9e68495c8d0f6f76d540508
 
 build:
   number: 0
@@ -17,13 +17,13 @@ build:
 requirements:
   build:
     - python
-    - numpy x.x
+    - numpy
     - setuptools
     - cython
 
   run:
     - python
-    - numpy x.x
+    - numpy
     - astropy >=1.0
     - scipy
 
