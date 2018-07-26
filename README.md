@@ -14,14 +14,16 @@ Summary: The reproject package implements image reprojection (resampling) method
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/reproject-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/reproject-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/reproject-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/reproject-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/reproject-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/reproject-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/reproject-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/reproject-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/reproject-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/reproject-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/reproject-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/reproject-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/reproject/badges/version.svg)](https://anaconda.org/conda-forge/reproject)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/reproject/badges/downloads.svg)](https://anaconda.org/conda-forge/reproject)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-reproject-green.svg)](https://anaconda.org/conda-forge/reproject) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/reproject.svg)](https://anaconda.org/conda-forge/reproject) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/reproject.svg)](https://anaconda.org/conda-forge/reproject) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/reproject.svg)](https://anaconda.org/conda-forge/reproject) |
 
 Installing reproject
 ====================
