@@ -1,4 +1,4 @@
-{% set version = "0.4" %}
+{% set version = "0.5.1" %}
 
 package:
   name: reproject
@@ -7,10 +7,10 @@ package:
 source:
   fn: reproject-{{version}}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: 56777bf5c2f8e2a7c0a05b3d058943c2
+  md5: 3de3fddddea39425e175d78fc62039a2
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
 
 
@@ -27,6 +27,7 @@ requirements:
     - astropy >=2.0
     - scipy >=0.9
     - astropy-healpix >=0.2
+    - six
 
 test:
   imports:
