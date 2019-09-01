@@ -27,6 +27,7 @@ requirements:
     - astropy >=2.0
     - scipy >=0.9
     - astropy-healpix >=0.2
+    - six
 
 test:
   imports:
