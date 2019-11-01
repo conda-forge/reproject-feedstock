@@ -40,6 +40,7 @@ test:
 about:
   home: http://reproject.readthedocs.io
   license:  BSD 3-Clause
+  license_file: LICENSE.md
   summary: "The reproject package implements image reprojection (resampling) methods for astronomical data."
 
 extra:
