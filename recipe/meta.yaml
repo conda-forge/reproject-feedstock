@@ -18,16 +18,15 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.5
     - numpy
     - setuptools
   run:
-    - python
+    - python >=3.5
     - {{ pin_compatible('numpy') }}
-    - astropy >=2.0
+    - astropy >=3.2
     - scipy >=0.9
     - astropy-healpix >=0.2
-    - six
 
 test:
   imports:
