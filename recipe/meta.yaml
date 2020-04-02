@@ -1,4 +1,4 @@
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: reproject
@@ -7,12 +7,12 @@ package:
 source:
   fn: reproject-{{version}}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: e0280e7627eb26dc0dcd62c145a15f18
+  md5: ff2821e83ac2d68a8fecdee1ebcc2d45
 
 build:
   number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
-  skip: True  # [py2k]
+  skip: true  # [py2k]
 
 
 requirements:
@@ -41,9 +41,9 @@ test:
 
 about:
   home: http://reproject.readthedocs.io
-  license:  BSD 3-Clause
+  license: BSD 3-Clause
   license_file: LICENSE.md
-  summary: "The reproject package implements image reprojection (resampling) methods for astronomical data."
+  summary: The reproject package implements image reprojection (resampling) methods for astronomical data.
 
 extra:
   recipe-maintainers:
