@@ -18,12 +18,12 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - extension-helpers
   host:
     - python
     - numpy
     - setuptools
     - cython
+    - extension-helpers
   run:
     - python
     - {{ pin_compatible('numpy') }}
