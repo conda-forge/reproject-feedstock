@@ -11,13 +11,14 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
+  script: python setup.py install --no-git --single-version-externally-managed --record record.txt
   skip: true  # [py2k]
 
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - extension-helpers
   host:
     - python
     - numpy
