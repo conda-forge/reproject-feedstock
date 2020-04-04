@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - numpy
+    - pip
     - setuptools
     - setuptools-scm
     - cython
@@ -31,6 +32,8 @@ requirements:
     - astropy-healpix >=0.2
 
 test:
+  requires:
+    - pytest-astropy
   imports:
     - reproject
     - reproject.healpix
