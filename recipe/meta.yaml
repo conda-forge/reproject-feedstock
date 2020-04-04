@@ -11,9 +11,7 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --no-git --single-version-externally-managed --record record.txt
-  skip: true  # [py2k]
-
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,6 +20,7 @@ requirements:
     - python
     - numpy
     - setuptools
+    - setuptools-scm
     - cython
     - extension-helpers
   run:
@@ -42,8 +41,8 @@ test:
 
 about:
   home: http://reproject.readthedocs.io
-  license: BSD 3-Clause
-  license_file: LICENSE.md
+  license: BSD-3-Clause
+  license_file: LICENSE
   summary: The reproject package implements image reprojection (resampling) methods for astronomical data.
 
 extra:
