@@ -3,7 +3,7 @@ About reproject
 
 Home: http://reproject.readthedocs.io
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
