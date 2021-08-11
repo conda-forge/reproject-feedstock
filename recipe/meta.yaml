@@ -12,6 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<37]
 
 requirements:
   build:
@@ -28,8 +29,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - astropy >=3.2
+    - astropy-healpix >=0.6
     - scipy >=1.1
-    - astropy-healpix >=0.2
 
 test:
   requires:
