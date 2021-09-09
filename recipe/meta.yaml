@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.8" %}
 
 package:
   name: reproject
@@ -7,11 +7,15 @@ package:
 source:
   fn: reproject-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: 817570e405d3b4b173fc3e098f83a54a
+  md5: b7db39086abc683c2b5cfc9b2185736c
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<37]
+  # 2021 August: build fails with conflicts; 3.7 and 3.9 work; assume something
+  # in the channel is busted and just skip it:
+  skip: true  # [py==38 and ppc64le]
 
 requirements:
   build:
@@ -28,8 +32,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - astropy >=3.2
+    - astropy-healpix >=0.6
     - scipy >=1.1
-    - astropy-healpix >=0.2
 
 test:
   requires:
