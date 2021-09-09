@@ -13,6 +13,9 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
+  # 2021 August: build fails with conflicts; 3.7 and 3.9 work; assume something
+  # in the channel is busted and just skip it:
+  skip: true  # [py==38 and ppc64le]
 
 requirements:
   build:
