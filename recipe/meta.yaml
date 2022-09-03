@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 
 package:
   name: reproject
@@ -7,10 +7,10 @@ package:
 source:
   fn: reproject-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: b7db39086abc683c2b5cfc9b2185736c
+  md5: 7ca84f61b5185e58c8dced85bae84356
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
   # 2021 August: build fails with conflicts; 3.7 and 3.9 work; assume something
