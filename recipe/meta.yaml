@@ -27,7 +27,7 @@ requirements:
     - pip
     - setuptools
     - setuptools-scm
-    - cython =0.29.21
+    - cython
     - extension-helpers
   run:
     - python
