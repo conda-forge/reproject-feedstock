@@ -10,7 +10,7 @@ source:
   md5: 7ca84f61b5185e58c8dced85bae84356
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<38]
 
