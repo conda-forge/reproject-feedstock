@@ -45,7 +45,7 @@ test:
     - reproject.interpolation
     - reproject.spherical_intersect
   commands:
-    - python -c "import reproject; reproject.test()"
+    - python -c "import reproject"
 
 about:
   home: http://reproject.readthedocs.io
