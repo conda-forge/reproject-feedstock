@@ -10,7 +10,7 @@ source:
   md5: 97919e12687f55063c1fd47c9be9e965
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<38]
 
@@ -58,3 +58,4 @@ extra:
     - astrofrog-conda-forge
     - mwcraig
     - bsipocz
+    - Cadair
