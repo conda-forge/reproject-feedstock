@@ -39,6 +39,7 @@ requirements:
 test:
   requires:
     - pytest-astropy
+    - dask
   imports:
     - reproject
     - reproject.healpix
