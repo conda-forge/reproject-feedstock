@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: reproject
@@ -7,10 +7,10 @@ package:
 source:
   fn: reproject-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: d9abe12e3411657a6c01fb5abcf3ef4c
+  md5: 19076686f302fc52aba977dd5c7e83a3
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<38 or python_impl == 'pypy']
 
