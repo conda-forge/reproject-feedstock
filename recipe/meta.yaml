@@ -10,7 +10,7 @@ source:
   md5: 19076686f302fc52aba977dd5c7e83a3
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<310 or python_impl == 'pypy']
 
@@ -22,6 +22,7 @@ requirements:
     - cython =3.0.4                          # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - numpy
@@ -33,10 +34,10 @@ requirements:
     - extension-helpers
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy >=1.23
     - astropy >=5.0
     - astropy-healpix >=0.6
-    - scipy >=1.5
+    - scipy >=1.9
     - dask >=2021.8
     - cloudpickle
     - zarr
