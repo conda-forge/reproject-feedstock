@@ -34,9 +34,10 @@ requirements:
     - extension-helpers
   run:
     - python
+    - numpy >=1.23
     - astropy >=5.0
     - astropy-healpix >=0.6
-    - scipy >=1.5
+    - scipy >=1.9
     - dask >=2021.8
     - cloudpickle
     - zarr
