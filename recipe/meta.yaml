@@ -6,11 +6,11 @@ package:
 
 source:
   fn: reproject-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/reproject/reproject-{{ version }}.tar.gz
   md5: a09c29e849824d5867d614bfdc530730
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<310 or python_impl == 'pypy']
 
@@ -19,7 +19,7 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython =3.0.4                          # [build_platform != target_platform]
+    - cython >=3.0.4,<3.1.0                  # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
@@ -30,12 +30,12 @@ requirements:
     - setuptools
     - setuptools-scm
     - wheel
-    - cython =3.0.4
+    - cython >=3.0.4,<3.1.0
     - extension-helpers
   run:
     - python
     - numpy >=1.23
-    - astropy >=5.0
+    - astropy-base >=5.0
     - astropy-healpix >=1.0
     - scipy >=1.9
     - dask >=2021.8
