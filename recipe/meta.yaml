@@ -6,7 +6,7 @@ package:
 
 source:
   fn: reproject-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/r/reproject/reproject-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/reproject/reproject-{{ version }}.tar.gz
   md5: a09c29e849824d5867d614bfdc530730
 
 build:
