@@ -10,7 +10,7 @@ source:
   md5: a09c29e849824d5867d614bfdc530730
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<310 or python_impl == 'pypy']
 
