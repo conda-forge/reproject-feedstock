@@ -1,4 +1,4 @@
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: reproject
@@ -7,19 +7,19 @@ package:
 source:
   fn: reproject-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: a09c29e849824d5867d614bfdc530730
+  md5: ea3a1143d831d840ad5a53e620b5a7fe
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<310 or python_impl == 'pypy']
+  skip: true  # [py<311 or python_impl == 'pypy']
 
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython >=3.0.4,<3.1.0                  # [build_platform != target_platform]
+    - cython >=3.1                           # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
@@ -30,7 +30,7 @@ requirements:
     - setuptools
     - setuptools-scm
     - wheel
-    - cython >=3.0.4,<3.1.0
+    - cython >=3.1
     - extension-helpers
   run:
     - python
@@ -39,9 +39,10 @@ requirements:
     - astropy-healpix >=1.0
     - scipy >=1.9
     - dask >=2021.8
-    - cloudpickle
-    - zarr
-    - fsspec
+    - zarr >=2.11.0
+    - fsspec >=2021.8
+    - pillow >=10.0
+    - pyavm >=0.9.6
     - shapely
 
 test:
@@ -60,6 +61,7 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: The reproject package implements image reprojection (resampling) methods for astronomical data.
+  dev_url: https://github.com/astropy/reproject
 
 extra:
   recipe-maintainers:
