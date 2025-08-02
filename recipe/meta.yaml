@@ -57,10 +57,11 @@ test:
     - python -c "import reproject"
 
 about:
-  home: http://reproject.readthedocs.io
+  doc_url: http://reproject.readthedocs.io
   license: BSD-3-Clause
   license_file: LICENSE
   summary: The reproject package implements image reprojection (resampling) methods for astronomical data.
+  dev_url: https://github.com/astropy/reproject
 
 extra:
   recipe-maintainers:
