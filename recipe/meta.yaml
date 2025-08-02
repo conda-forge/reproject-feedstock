@@ -19,7 +19,7 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython >=3.0.4,<3.1.0                  # [build_platform != target_platform]
+    - cython >=3.1                           # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
@@ -30,7 +30,7 @@ requirements:
     - setuptools
     - setuptools-scm
     - wheel
-    - cython >=3.0.4,<3.1.0
+    - cython >=3.1
     - extension-helpers
   run:
     - python
@@ -39,9 +39,10 @@ requirements:
     - astropy-healpix >=1.0
     - scipy >=1.9
     - dask >=2021.8
-    - cloudpickle
-    - zarr
-    - fsspec
+    - zarr>=2.11.0
+    - fsspec>=2021.8
+    - pillow>=10.0
+    - pyavm>=0.9.6
     - shapely
 
 test:
