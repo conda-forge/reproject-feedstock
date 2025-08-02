@@ -39,10 +39,10 @@ requirements:
     - astropy-healpix >=1.0
     - scipy >=1.9
     - dask >=2021.8
-    - zarr>=2.11.0
-    - fsspec>=2021.8
-    - pillow>=10.0
-    - pyavm>=0.9.6
+    - zarr >= 2.11.0
+    - fsspec >= 2021.8
+    - pillow >= 10.0
+    - pyavm >= 0.9.6
     - shapely
 
 test:
