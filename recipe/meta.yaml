@@ -54,6 +54,7 @@ test:
     - reproject.interpolation
     - reproject.spherical_intersect
   commands:
+    - pip check
     - python -c "import reproject"
 
 about:
