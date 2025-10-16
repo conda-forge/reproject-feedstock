@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: reproject
@@ -7,7 +7,7 @@ package:
 source:
   fn: reproject-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/r/reproject/reproject-{{ version }}.tar.gz
-  md5: 56bf93e0b50bf2d239ec872183214426
+  md5: 39853052235e94cff5028d2eac664d74
 
 build:
   number: 0
